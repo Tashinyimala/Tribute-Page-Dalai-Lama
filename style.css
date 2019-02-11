@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Felipa');
+
+:root {
+    --text_shadow: 2px 2px 4px blue;
+    --box_shadow: 0 10px 20px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B52145;
+    text-align: center;
+    color: #FDD02F;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#main h1 {
+    color: #FDD02F;
+    text-shadow: var(--text_shadow);
+}
+
+#sub-title {
+    color: #FDD02F;
+    text-shadow: var(--text_shadow);
+}
+
+ol {
+    counter-reset: section;
+}
+
+li{
+    list-style-type: none;
+    position: relative;
+    font-size: 1rem;
+    padding: 15px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    background: #FDD02F;
+    color: #B52145;
+    max-width: 90vh;
+    align-items: center;
+    box-shadow: var(--box_shadow);
+}
+
+li::before {
+    counter-increment: section;
+    content: counter(section);
+    text-align: center;
+    display: inline-block;
+    color: #FDD02F;
+    border-radius: 50%;
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    font-size: 2rem;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #FDD02F;
+    box-shadow: var(--box_shadow)
+}
+
+#imag-div {
+    background: rgba(253, 208, 47, 0.8);
+    padding: 10px;
+    width: 50vw;
+    margin: 10px auto;
+    border-radius: 0.5rem;
+    background-size: cover;
+    max-width: 100%;
+    box-shadow: var(--box_shadow);
+}
+
+#img-caption {
+    padding: 0.5rem;
+    color: #B52145;
+}
+
+#image {
+    border-radius: 5%;
+    max-height: 90vh;
+    box-shadow: var(--box_shadow);
+}
+
+#tribute-info {
+    margin-top: 0.5rem
+}
+
+#tribute- info h2 {
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Felipa', cursive;
+}
+
+
+
+
