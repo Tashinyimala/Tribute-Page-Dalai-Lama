@@ -14,7 +14,7 @@ body {
     background-color: #B52145;
     text-align: center;
     color: #FDD02F;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville', serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main h1 {
